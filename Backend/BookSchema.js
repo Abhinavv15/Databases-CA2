@@ -21,8 +21,8 @@ const BookSchema = new mongoose.Schema({
         required:true
     },
     borrowedBy:{
-        type:String,
-        required:true
+        type:mongoose.Schema.Types.ObjectId,
+        ref: 'User'
     },
 })
 
